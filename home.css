@@ -1,0 +1,99 @@
+
+.buttom-header-container {
+    background-color: #6f4e37;
+}
+.buttom-header{
+    display: flex;
+    margin: 0 auto;
+    width: 1300px;  
+    color: whitesmoke;
+    position: relative;
+}
+
+.logo{
+   flex-basis:700px;
+   padding: 0px;
+}
+.m_text{
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: large;
+    padding-top: 15%;
+    padding-left: 55%;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    flex-basis: 600px;
+    
+}
+.navlist a {
+    text-decoration: none;
+    padding: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.5s;
+    color: whitesmoke;
+}
+.navlist a:hover{
+    color: #f78e21;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for container */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #333; /* Text color */
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+}
+
+.testimonials {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opacity than the container for focus */
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow compared to the container */
+    text-align: center;
+}
+
+.testimonial-slider {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.testimonial {
+    margin-bottom: 20px; /* Spacing between testimonials */
+}
+
+.testimonial p {
+    font-style: italic;
+    text-align: justify; /* Justified text for a neater appearance */
+    color: #555; /* Lighter than the main text for distinction */
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    color: #333; /* Same color as headings for consistency */
+    font-weight: bold;
+}
+

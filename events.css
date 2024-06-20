@@ -1,0 +1,124 @@
+body{
+  background-image: url("../images/event.webp");
+}
+
+
+.event-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.event-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    color: black;
+}
+
+.event-card p {
+    margin: 0;
+    font-size: large;
+    color: black;
+}
+
+#create-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to make it fill the whole viewport */
+}
+
+#create-button-container button {
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#create-button-container button:hover {
+    background-color: #45a049;
+}
+
+
+#btn {
+    display: block;
+    margin: 0 auto;
+    color: aliceblue;
+    background-color: #45a049;
+    margin-top: 5%;
+    padding: 10px;
+  }
+  
+ #btn:hover {
+    border-color: #45a049;
+    color: aliceblue;
+    background-color: lightgreen;
+  }
+  #create-form {
+    display: none;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1%;
+  }
+  
+  #create-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  #event-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #event-form input[type="text"],
+  #event-form input[type="date"],
+  #event-form input[type="time"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #event-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #event-form button[type="submit"] {
+    background-color: #008CBA;
+    margin-right: 10px;
+  }
+  
+  #event-form button[type="submit"]:hover,
+  #event-form button[type="button"]:hover {
+    background-color: #45a049;
+  }
+  
+  #event-form button[type="button"] {
+    background-color: #f44336;
+  }

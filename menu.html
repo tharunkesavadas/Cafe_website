@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Dashboard</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+    <div class="buttom-header-container">
+        <div class="buttom-header">
+            <div class="logo">
+                <h1>Verandah Café</h1>
+            </div>
+            <div class="navlist">
+                <a href="home.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="events.html">EVENTS</a>
+                <a href="ratings.html">ITEM RATINGS</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="index.html">LOGOUT</a> 
+            </div>
+        </div>
+    </div>
+    </div> 
+
+    <header>
+        <!-- Navigation bar goes here -->
+    </header>
+
+    <!-- Short header description for the menu page -->
+    <section class="menu-header">
+        <h1>Discover Our Exquisite Menu</h1>
+        <p>From aromatic coffees to delectable desserts, explore flavors that make every moment special.</p>
+    </section>
+    
+    <div class="main">
+        <div class="dropdown">
+            <i><b><label for="sectionSelect">Choose items from the dropdown:</label></b></i>
+            <select id="sectionSelect" name="sectionSelect" onchange="showSection(this.value)">
+                <option value=""></option>
+                <option value="coffee">Coffee</option>
+                <option value="snacks">Snacks</option>
+                <option value="shakes">Shakes</option>
+                <option value="icecreams">Ice Cream</option>
+            </select>
+        </div>
+</div>
+<div class="item-list">
+    <h2>Items Added:</h2>
+    <ul id="addedItems"></ul>
+</div>
+<div id="totalPrice"></div>
+<div class="button-container"></div>
+   <button onclick="buyItems()">Purchase</button>
+</div>
+   <div class="menu" id="menuSection"></div>
+
+    
+
+    
+    <script src="js/menu.js"> 
+    </script>            
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Page</h2>
+        <form id="login-form" action="home.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern=".{3,}" title="Username must be at least 3 characters long" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern=".{6,}" title="Password must be at least 6 characters long" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Not a member? <a href="signup.html">Sign up</a></p>
+    </div>
+</body>
+

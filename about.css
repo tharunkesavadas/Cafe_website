@@ -1,0 +1,109 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header and navigation styling */
+.buttom-header-container {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.buttom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navlist a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.navlist a:hover {
+  color: #f4f4f4;
+  background: #555;
+}
+
+/* Profile container and image styling */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px; /* Set max-width for profiles */
+  text-align: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-description {
+  padding: 15px;
+}
+
+.profile h2 {
+  margin: 0 0 10px;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Image styling to fit properly on the page */
+.image {
+  display: block;
+  max-width: 100%; /* Make image responsive */
+  height: auto;
+  margin: 20px auto; /* Center image horizontally */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds shadow for depth */
+}
+
+/* Add this to ensure images do not exceed their container */
+.about-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjusting image sizes for specific images if necessary */
+img[src*="ERD diagram.png"], img[src*="visualization by ratings.png"] {
+  max-height: 500px; /* Set a max-height for large images if necessary */
+}
+
+/* Additional media query for responsive adjustments */
+@media (max-width: 768px) {
+  .buttom-header {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .navlist a {
+      padding: 10px 0;
+  }
+  
+  .about-container {
+      flex-direction: column;
+  }
+}

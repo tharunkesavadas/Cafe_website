@@ -1,0 +1,162 @@
+/* ratings.css */
+
+/* Basic reset and font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: rgb(235, 205, 149);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.table-container {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#ratingsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.9em;
+}
+
+#ratingsTable thead {
+    background-color: #6f4e37;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#ratingsTable th, #ratingsTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+#ratingsTable th:not(:last-child), #ratingsTable td:not(:last-child) {
+    border-right: 2px solid #ddd;
+}
+
+#ratingsTable tr {
+    transition: background-color 0.3s ease;
+}
+
+#ratingsTable tr:nth-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+#ratingsTable tr:last-of-type {
+    border-bottom: 3px solid #6f4e37;
+}
+
+#ratingsTable tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em; /* Adjusted font size */
+    margin-bottom: 10px; /* Adjusted spacing */
+}
+
+/* ... existing CSS ... */
+
+/* Enhanced description styling */
+/* ... existing CSS ... */
+
+.content-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 2em auto; /* Top and bottom margin with auto to center horizontally */
+    padding: 1em; /* Padding inside the container */
+    background-color: #ffffff; /* Background color of the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for some depth */
+    text-align: center; /* Center text alignment */
+}
+
+/* Enhance the .description style if needed */
+.description {
+    font-family: 'Georgia', serif;
+    font-size: 1.8em; /* Adjusted for better proportion */
+    color: #6a5acd;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    line-height: 1.4; /* Adjust line height for better readability */
+}
+
+/* Adjust the .sub-header style if needed */
+.sub-header {
+    font-size: 1.2em; /* Slightly larger than normal text for emphasis */
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: normal; /* To differentiate from the main description */
+}
+
+/* Center the 'Choose a category' dropdown container */
+.dropdown-container {
+    margin: 1em auto; /* Auto margins for horizontal centering */
+    display: block; /* Convert to block to take width */
+    width: fit-content; /* Adjust the width to fit the content */
+}
+
+/* Style the dropdown select element */
+#categoryFilter {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1em; /* Space above the dropdown */
+    margin-bottom: 1em; /* Space below the dropdown */
+}
+
+/* ... media queries and other styles ... */
+
+
+/* Responsive font sizes and container adjustments */
+@media (max-width: 600px) {
+    .description {
+        font-size: 1.5em; /* Smaller font size on mobile */
+    }
+
+    .sub-header {
+        font-size: 0.85em; /* Smaller font size on mobile */
+    }
+
+    .table-container {
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    #ratingsTable {
+        font-size: 0.85em; /* Smaller font size for the table on mobile */
+    }
+
+    #ratingsTable th, #ratingsTable td {
+        padding: 8px; /* Less padding to fit content on smaller screens */
+    }
+    
+    .dropdown-container {
+        margin: 15px 0; /* Reduced spacing on mobile */
+    }
+
+    #categoryFilter {
+        padding: 8px; /* Smaller padding on mobile */
+        font-size: 14px; /* Smaller font size for better fit on mobile */
+    }
+}
+   

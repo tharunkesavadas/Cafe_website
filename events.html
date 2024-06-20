@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="buttom-header-container">
+        <div class="buttom-header">
+            <div class="logo">
+                <h1>Verandah Café</h1>
+            </div>
+            <div class="navlist">
+                <a href="home.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="events.html">EVENTS</a>
+                <a href="ratings.html">ITEM RATINGS</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="index.html">LOGOUT</a> 
+            </div>
+        </div>
+    </div>
+<div id="events-container">
+    <!-- Events will be displayed here -->
+</div>
+
+<button id="btn" onclick="showCreateForm()">Add Event</button>
+
+<div id="create-form" style="display: none;">
+    <h2>Add New Event</h2>
+    <form id="event-form" onsubmit="addEvent(); return false;">
+        <label for="eventName">Event Name:</label><br>
+        <input type="text" id="eventName" name="eventName" required><br>
+        <label for="eventDate">Event Date:</label><br>
+        <input type="date" id="eventDate" name="eventDate" required><br>
+        <label for="eventTime">Event Time:</label><br>
+        <input type="time" id="eventTime" name="eventTime" required><br>
+        <button type="submit">Submit</button>
+        <button type="button" onclick="hideCreateForm()">Cancel</button>
+    </form>
+</div>
+
+<script src="js/events.js">
+    
+</script>
+
+</body>
+</html>

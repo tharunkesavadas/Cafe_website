@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ratings & Calories</title>
+    <link rel="stylesheet" href="css/ratings.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="buttom-header-container">
+        <div class="buttom-header">
+            <div class="logo">
+                <h1>Verandah Café</h1>
+            </div>
+            <div class="navlist">
+                <a href="home.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="events.html">EVENTS</a>
+                <a href="ratings.html">ITEM RATINGS</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="index.html">LOGOUT</a> 
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <p class="main-description">Savor the flavor and balance your choices with our detailed calorie and ratings guide.</p>
+        
+        <!-- Dropdown for choosing a category -->
+        <div class="dropdown-container">
+            <label for="categoryFilter">Choose a category:</label>
+            <select id="categoryFilter" onchange="filterTable()">
+                <option value="all">All</option>
+                <option value="coffee">Coffee</option>
+                <option value="food">Food</option>
+                <option value="shakes">Shakes</option>
+                <option value="cakesIceCreams">Cakes/Ice Creams</option>
+            </select>
+        </div>
+        
+        <h2 class="sub-header">Calories Information and Reviews based on Customer Experience</h2>
+        <!-- The rest of your content below -->
+        <!-- ... -->
+    </div>
+
+</div>
+
+    <div class="table-container">
+        <table id="ratingsTable">
+            <thead>
+                <tr>
+                    <th>Item Type</th>
+                    <th>Calories</th>
+                    <th>Notes</th>
+                    <th>Rating (out of 5)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-category="coffee">
+                    <td>Espresso</td>
+                    <td>5</td>
+                    <td>Healthy choice</td>
+                    <td>4.8</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Americano</td>
+                    <td>13</td>
+                    <td>Healthy choice</td>
+                    <td>4.6</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Café Breve</td>
+                    <td>100</td>
+                    <td>Contains steamed half and half</td>
+                    <td>4.3</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Flat White</td>
+                    <td>120</td>
+                    <td>Contains milk foam</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Cappuccino</td>
+                    <td>165</td>
+                    <td>Contains steamed milk</td>
+                    <td>4.5</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Latte</td>
+                    <td>180</td>
+                    <td>Contains steamed milk</td>
+                    <td>4.4</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Mocha</td>
+                    <td>320</td>
+                    <td>Contains chocolate syrup</td>
+                    <td>4.2</td>
+                </tr>
+                <tr data-category="coffee">
+                    <td>Alfredo Pasta</td>
+                    <td>650</td>
+                    <td>Creamy white sauce and parmesan</td>
+                    <td>4.5</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Spaghetti Bolognese</td>
+                    <td>570</td>
+                    <td>Classic meat sauce</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Pesto Pasta</td>
+                    <td>480</td>
+                    <td>With fresh basil and pine nuts</td>
+                    <td>4.6</td>
+                </tr>
+            
+                <!-- Sandwich items -->
+                <tr data-category="food">
+                    <td>French Fries</td>
+                    <td>300</td>
+                    <td>Golden and crispy fries served with a side of ketchup</td>
+                    <td>4.5</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Chicken Sandwich</td>
+                    <td>500</td>
+                    <td>Grilled chicken and veggies</td>
+                    <td>4.4</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Veggie Sandwich</td>
+                    <td>350</td>
+                    <td>Assorted vegetables and feta</td>
+                    <td>4.3</td>
+                </tr>
+            
+                <!-- Burger items -->
+                <tr data-category="food">
+                    <td>Classic Chicken Burger</td>
+                    <td>700</td>
+                    <td>Chicken patty with cheddar cheese</td>
+                    <td>4.8</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Veggie Burger</td>
+                    <td>550</td>
+                    <td>Plant-based patty with avocado</td>
+                    <td>4.2</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Chicken Wings</td>
+                    <td>430</td>
+                    <td>Spicy glazed wings</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Chicken Tenders</td>
+                    <td>350</td>
+                    <td>Crispy fried with dipping sauces</td>
+                    <td>4.5</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Chicken Lollipop</td>
+                    <td>390</td>
+                    <td>Served with a spicy dip</td>
+                    <td>4.8</td>
+                </tr>
+            
+                <!-- Veg Appetizers -->
+                <tr data-category="food">
+                    <td>Stuffed Mushrooms</td>
+                    <td>310</td>
+                    <td>Stuffed with cheese and herbs</td>
+                    <td>4.6</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Vegetable Spring Rolls</td>
+                    <td>250</td>
+                    <td>Crispy rolls with sweet chili sauce</td>
+                    <td>4.4</td>
+                </tr>
+                <tr data-category="food">
+                    <td>Garlic Bread Sticks</td>
+                    <td>220</td>
+                    <td>Garlic butter and parmesan</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="shakes">
+                    <td>Oreo Shake</td>
+                    <td>350</td>
+                    <td>Creamy shake with crushed Oreos</td>
+                    <td>4.9</td>
+                </tr>
+                <tr data-category="shakes">
+                    <td>Strawberry Shake</td>
+                    <td>310</td>
+                    <td>Made with real strawberries</td>
+                    <td>4.8</td>
+                </tr>
+                <tr data-category="shakes">
+                    <td>Vanilla Shake</td>
+                    <td>300</td>
+                    <td>Classic vanilla with a creamy texture</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="shakes">
+                    <td>Chocolate Shake</td>
+                    <td>360</td>
+                    <td>Rich chocolate flavor</td>
+                    <td>4.8</td>
+                </tr>
+                <tr data-category="shakes">
+                    <td>KitKat Shake</td>
+                    <td>380</td>
+                    <td>Blended with KitKat pieces</td>
+                    <td>5.0</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Chocolate Lava Cake</td>
+                    <td>450</td>
+                    <td>Moist chocolate cake with a gooey chocolate center</td>
+                    <td>4.9</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>New York Cheesecake</td>
+                    <td>400</td>
+                    <td>Rich cheesecake with a dense, smooth, and creamy consistency</td>
+                    <td>4.8</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Red Velvet Cake</td>
+                    <td>370</td>
+                    <td>Light chocolate cake with deep red coloring and cream cheese frosting</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Tiramisu</td>
+                    <td>450</td>
+                    <td>Coffee-flavored Italian dessert</td>
+                    <td>4.9</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Carrot Cake</td>
+                    <td>340</td>
+                    <td>Spiced cake with grated carrots and typically frosted with cream cheese</td>
+                    <td>4.6</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Vanilla Ice Cream</td>
+                    <td>210</td>
+                    <td>Smooth classic vanilla</td>
+                    <td>4.5</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Mint Chocolate Chip Ice Cream</td>
+                    <td>230</td>
+                    <td>Refreshing mint with dark chocolate chips</td>
+                    <td>4.8</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Rocky Road Ice Cream</td>
+                    <td>260</td>
+                    <td>Chocolate ice cream with marshmallows and almonds</td>
+                    <td>4.7</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Strawberry Ice Cream</td>
+                    <td>220</td>
+                    <td>Made with real strawberries</td>
+                    <td>4.5</td>
+                </tr>
+                <tr data-category="cakesIceCreams">
+                    <td>Lemon Sorbet</td>
+                    <td>180</td>
+                    <td>Light and refreshing with a tart lemon flavor</td>
+                    <td>4.6</td>
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/ratings.js"></script>
+</body>
+</html>
